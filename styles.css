@@ -1,1 +1,9 @@
-{\rtf1}
+SELECTOR {
+    styles: values;
+}
+h1 {
+    font-size: 60px;
+    font-family: 'Segoe UI';
+    color: black;
+    margin: auto;
+}
