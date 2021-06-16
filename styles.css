@@ -5,11 +5,13 @@ h1 {
     font-size: 60px;
     font-family: 'Segoe UI';
     color: black;
-    text-align: center;
 }
 h2 {
     font-size: 20px;
     font-family: 'Segoe UI';
     color: black;
+}
+.content  {
+    width: 100px;
     margin: auto;
 }
