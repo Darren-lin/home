@@ -1,15 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 SELECTOR {
     styles: values;
 }
 h1 {
     font-size: 65px;
-    font-family: 'Segoe UI';
+    font-family: 'Noto Sans';    
     color: black;
     margin: 0
 }
 h2 {
     font-size: 20px;
     font-weight: 500;
-    font-family: 'Segoe UI';
+    font-family: 'Noto Sans';
     color: black;
 }
