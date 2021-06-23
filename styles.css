@@ -14,10 +14,16 @@ h2 {
     font-family: 'Noto Sans';
     color: black;
 }
-h3 {
+.left {
     font-family: 'Noto sans';
-    color:black;
+    color: black;
     font-size: 20px;
-    margin-top: 60px;
-    margin-left: 525px;
+    margin-left: 550px;
+    margin-top: 75;
+    text-align: left;
+}
+.right {
+    margin-left: 400px;
+    display: inline-block;
+    text-align: left;
 }
