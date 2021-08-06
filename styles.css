@@ -43,7 +43,6 @@ main {
     margin: 0 20px 10px 0;
 }
 .content {
-    margin-left: ;
     display: flex;
     flex: 1;
     flex-direction: column;
