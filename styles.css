@@ -16,6 +16,7 @@ h2 {
 }
 
 .all {
+    margin-top: 30px;
     display:flex;
     flex-direction: column;
 }
@@ -23,11 +24,12 @@ h2 {
     display: flex;
     flex-direction: row;
     text-align: left;
+    margin-bottom: 25px;
 }
 .sectionHeader {
     font-size: larger;
-    margin-top: 25px;
-    margin-left: 350px;
+    margin-top: 10px;
+    margin-left: 625px;
     font-weight: 200;
     text-align: left;
     width: 100px;
@@ -35,7 +37,7 @@ h2 {
 .content {
     font-size: medium;
     margin-top: 25px;
-    margin-left: 200px;
+    margin-left: 260px;
     text-align: left;
     width: 600px;
     font-family: 'Noto Sans';    
@@ -44,9 +46,9 @@ h2 {
 .sectionTitle {
     font-family: 'Noto Sans';    
     color: black;
-    margin-left: 140px;
+    margin-left: 200px;
     text-align: left;
-    margin-top: 30px;
+    margin-top: 15px;
     font-size: large;
     font-weight: bolder;
 
