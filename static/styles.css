@@ -1,0 +1,60 @@
+body {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    background-color: #f3f5fa;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 700px;
+    padding: 1rem;
+    margin: auto;
+}
+
+.navbar {
+    line-height: 0.7;
+}
+
+.experience-content {
+    line-height: 0.7;
+}
+
+.experience-content p,
+.project-content p {
+    display: block;
+    margin-top: -0.5em;
+}
+
+.project-content {
+    line-height: 1.2;
+}
+
+.subsection-title {
+    white-space: nowrap;
+}
+
+@media (max-width: 360px) {
+    .job-title {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}
+
+.pfp-div {
+    float: right;
+}
+
+.pfp {
+    border-radius: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    background: #f3f5fa;
+}
+
+.ibm-plex-sans-regular {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

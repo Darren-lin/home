@@ -1,64 +1,69 @@
-<html>
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darren Lin</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css" />
 </head>
 
 <body>
-    <h1 style="text-align: center;">
-        <b>Darren Lin</b>
-    </h1>
-    <h2 style="text-align: center;">
-        <a target="_blank" href="https://www.linkedin.com/in/lin-darren/">linkedin</a><b> | </b>
-        <a target="_blank" href="https://github.com/Darren-lin">github</a><b> | </b>
-        <a target="_blank" href="Darren_Lin_Resume.pdf">resume</a>
-    </h2>
-    <main>
-        <div class="container">
-            <div class="section">
-                <div class="title"><b>About</b></div>
-                <div class="content">
-                    <p>
-                        Hey and welcome! I am a rising Junior majoring in Computer
-                        Engineering at the UC Santa Cruz. <br><br>
-                        I am currently seeking Summer 2023 internships, if you would like to get in touch, email me
-                        at darrenhlin02 (at) gmail (dot) com.
-                    </p>
-                </div>
-            </div>
-            <div class="section">
-                <div class="title"><b>Experience</b></div>
-                <div class="content">
-                    <h3><b>Software Development Intern @ CDK Global</b></h3>
-                    <medium>San Jose, CA | June 2022 - August 2022</medium> <br>
-                    <h3><b>CSE 16 Grader @ UCSC Computer Science and Engineering Department</b></h3>
-                    <medium>Santa Cruz, CA | March 2022 - June 2022</medium> <br>
-                    <h3><b>CSE 12 Group Tutor @ UCSC Computer Science and Engineering Department</b></h3>
-                    <medium>Santa Cruz, CA | March 2021 - December 2021</medium> <br>
-                    <h3><b>Robotics Technology Research Intern @ Cloudmind Technology</b></h3>
-                    <medium>Santa Clara, CA | September 2021 - December 2021</medium><br>
-                    <h3><b>Reading and Writing Tutor @ Kumon Math and Reading Center</b></h3>
-                    <medium>San Jose, CA | August 2018 - July 2021</medium>
-                </div>
-            </div>
-            <div class="section">
-                <div class="title"><b>Projects</b></div>
-                <div class="content">
-                    <h3><b>BlackJack w/ GUI</b></h3>
-                    <p>A user friendly blackjack game against a computer displayed on a GUI.</p> <br>
-                    <h3><b>Bracket Syntax Checker</b></h3>
-                    <p>Determined if each open brace, bracket, and parenthesis had a corresponding closing brace,
-                        bracket, or parenthesis in a given text file.</p><br>
-                    <h3><b>Big Integer Solver</b></h3>
-                    <p>Implemented Big Integer addition, Subtraction, and Multiplication. Utilizes a doubly linked
-                        list to represent Big Integers.</p>
-                </div>
+    <div class="container">
+        <div class="navbar">
+            <h1>Darren Lin</h1>
+            <div>
+                <p>darrenhlin02 [at] gmail [dot] com</p>
+                <a href="https://www.linkedin.com/in/lin-darren/">linkedin</a> //
+                <a href="https://github.com/Darren-lin">github</a> //
+                <a href="static/Darren_Lin_Resume.pdf">resume</a>
             </div>
         </div>
+        <div class="pfp-div">
+            <img src="static/pfp.jpg" alt="pfp" width="200px" class="pfp">
         </div>
-    </main>
+        <div>
+            <h1>About</h1>
+            <p>
+                Hello! I'm a Software Engineer at
+                <a href="https://www.cdkglobal.com/">CDK Global</a>. I graduated with a Bachelor of Science in Computer
+                Engineering and a minor in Computer Science from UC Santa Cruz.
+            </p>
+            <p>
+                I'm interested in hardware design languages and web technologies. If you’d like to get in touch, email
+                me at darrenhlin02 [at] gmail [dot] com.
+            </p>
+        </div>
+        <div>
+            <h1>Projects</h1>
+            <div class="project-content">
+                <h3 class="subsection-title"><a style="text-decoration: none"
+                        href="https://github.com/Darren-lin/Chisel-JPEG">Chisel JPEG</a></h3>
+                <p>Chisel JPEG is a JPEG compressor designed to compress raw pixel data values using lossless
+                    compression techniques. The compressor is implemented using parameterized Chisel modules and Scala
+                    models, which play a crucial role in verifying the accuracy of the hardware design.</p>
+                <h3 class="subsection-title"><a style="text-decoration: none"
+                        href="https://github.com/mikeriepe/amplifytasselapp">Tassel</a></h3>
+                <p>Tassel enables UC Santa Cruz alumni to connect through community volunteering events. I integrated
+                    in-app messaging, a social networking feature, and a recommendation engine powered by machine
+                    learning. The web application is developed using AWS Amplify and React.
+                </p>
+            </div>
+        </div>
+        <div>
+            <h1>Experience</h1>
+            <div class="experience-content">
+                <h3 class="subsection-title">Associate Software Engineer @ CDK Global</h3>
+                <p>Austin, TX // June 2024 - Present</p>
+                <h3 class="subsection-title">Software Engineering Intern @ CDK Global</h3>
+                <p>San Jose, CA // June 2023 - September 2023</p>
+                <h3 class="subsection-title">Software Engineering Intern @ CDK Global</h3>
+                <p>San Jose, CA // June 2022 - August 2022</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
