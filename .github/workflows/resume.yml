@@ -14,16 +14,16 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Setup LaTeX Dependencies
-        uses: make -C resume-builder install
+        run: make -C resume-builder install
 
       - name: Build Resume
-        uses: make -C resume-builder
+        run: make -C resume-builder
 
       - name: Move Resume
-        uses: mv resume-builder/resume.pdf static/Darren_Lin_Resume.pdf
+        run: mv resume-builder/resume.pdf static/Darren_Lin_Resume.pdf
 
       - name: Cleanup
-        uses: make -C resume-builder clean 
+        run: make -C resume-builder clean 
 
       - name: Configure Git
         run: |
