@@ -1,6 +1,6 @@
 % Class Identifier and Version
 \ProvidesClass{resume}[2023/06/06 Dlin class]
-% \NeedsTeXFormat{LaTeX2e}
+\NeedsTeXFormat{LaTeX2e}
 
 % Set font size and paper type
 \LoadClass[10pt,letterpaper]{article}
@@ -12,7 +12,7 @@
 \RequirePackage[parfill]{parskip}
 
 % Set margin width
-\RequirePackage[hmargin=1.25cm,vmargin=0.75cm]{geometry}
+\RequirePackage[hmargin=1.25cm,vmargin=0.5cm]{geometry}
 
 % Use cool fonts
 \RequirePackage{fontspec}
@@ -174,7 +174,7 @@
     \phantomsection
     \addcontentsline{toc}{subsection}{#1}
     \textbf{#1} \hfill \textit{#3} \newline
-    \textit{#2} \hfill \textit{#4}
+    #2 \hfill \textit{#4}
     \smallskip
     \begin{list}{}{
         \leftmargin=0em \itemindent=0em \labelwidth=0em \labelsep=0em

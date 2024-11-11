@@ -9,7 +9,7 @@
 {\github{Darren-lin}}
 {\phone{+1 (408) 838-8795}}
 {\website{darren-lin.github.io/home/}}
-{\address{San Jose, CA}}
+{\address{Austin, TX}}
 
 \begin{section}{EDUCATION}
     \begin{subsectionnobullet}{University of California, Santa Cruz}{Bachelor of Science, Computer Engineering with Highest Honors; Computer Science Minor - GPA: 3.78/4.0}{\textbf{Sep 2020 - Jun 2024}}{}
@@ -18,18 +18,25 @@
 \end{section}
 
 \begin{section}{WORK EXPERIENCE}
+    \begin{subsection}{Associate Software Engineer @ CDK Global}{}{\textbf{Jun 2024 - Present}}{}
+        \item Deployed background job to efficiently fetch and process thousands of vehicles from in-transit inventory feeds for Hyundai Canada, Mini Shift, and Infiniti Shift
+        \item Refactored background job logic to replace FTP server retrieval with system command-based fetching for JATO squish VINs and JATO specs
+        \item Implemented 4 background jobs to pull, process, and cache build data for JLR and VW/Audi from DMI's FTP server
+        \item Applied a new tiebreaker to accurately match Volvo vehicle styles for 2025 and 2025.5 model years based on MSRP, improving precision in style selection in vehicle matcher
+        \item Enhanced CSV header validation for background jobs that handle inventory feed processing, ensuring data integrity
+    \end{subsection}
     \begin{subsection}{Software Engineering Intern @ CDK Global}{}{\textbf{Jun 2023 - Sep 2023}}{}
-        \item Revamped order step user interface to distinguish preorders from orders for all 224 Hyundai Canada dealers
-        \item Created a new API endpoint to retrieve lender program data from Roadster’s CalcEngine, utilizing provided auto loan and lease parameters including credit scores, terms, and annual mileages
-        \item Streamlined user interface changes to lender programs comparison modal to support the addition of new data pulled and calculated by new API endpoint; resulted in a 109\% increase in hits
-        \item Generated nearly 800 hits on the compare lender programs modal across 320 dealers in 3 months
+        \item Overhauled the order step user interface, enabling clear differentiation between preorders and standard orders for all 224 Hyundai Canada dealerships
+        \item Created a new API endpoint to retrieve lender program data from Roadster's CalcEngine, integrating auto loan and lease parameters such as credit scores, terms, and annual mileage
+        \item Optimized the lender program comparison modal UI to accommodate new data from the API, leading to a 109\% increase in user engagement
+        \item Generated nearly 800 interactions with the lender program comparison modal across 320 dealers within 3 months
     \end{subsection}
     
     \begin{subsection}{Software Engineering Intern @ CDK Global}{}{\textbf{Jun 2022 - Aug 2022}}{}
-        \item Facilitated the capability for generating invoices for ”other” payments and processing refunds using the Stripe API across 2805 integrated dealerships
-        \item Maintained Shift certification by porting code that sent LivePerson analytics for all live chat actions on all Roadster supported dealerships to Shift
-        \item Developed an algorithm to auto-generate content security policies on page load for hundreds of dealerships to improve security for Roadster payment slideouts
-        \item Collaborated with a team of 5 on a mobile application for Roadster’s dealer management website for company wide hackathon
+        \item Enabled invoice generation for “other” payments and facilitated refund processing across 2805 integrated dealerships using the Stripe API
+        \item Maintained Shift certification by adapting code to send LivePerson analytics for live chat actions to Shift across all Roadster-supported dealerships
+        \item Developed an algorithm to automatically generate content security policies for hundreds of dealerships, enhancing security for Roadster payment slideouts
+        \item Collaborated with a team of 5 on a mobile application for Roadster’s dealer management platform as part of the company-wide hackathon
     \end{subsection}
 \end{section}
 \begin{section}{PROJECTS}
@@ -38,27 +45,18 @@
     \item Validated Chisel modules via rigorous unit testing, ensuring accuracy by cross-referencing outputs with Scala models
     \item Employed a modular architecture enabling easy integration and testing of different compression stages
 \end{subsection}
-\begin{subsection}{Don't Fall}{}{\textbf{Verilog, Basys3, Vivado}}{}
-    \item Engineered a captivating single-player game on the Basys3 board, challenging players to navigate around randomly sized holes, collect coins of varying heights, and control jump height by pressing and holding the U-button
-    \item Produced randomness for game components using 8-bit linear feedback shift registers
-    \item Employed game logic using only basic logical operators and 2 state machines to control the player and the coin
-\end{subsection}
 \begin{subsection}{Tassel}{}{\textbf{JavaScript, HTML/CSS, React, AWS Amplify, GraphQL, DynamoDB, S3}}{}
     \item Spearheaded a team of 7, to integrate in-app messaging and a machine learning-based recommendation engine, while also organizing weekly meetings with sponsors to showcase the progress of our features
     \item Introduced an innovative friend request system, enabling all 120,000 alumni to seamlessly connect with each other
     \item Established in-app messaging using Amplify's Datastore functions and a GraphQL schema for efficient data querying
 \end{subsection}
-\begin{subsection}{Vroomers}{}{\textbf{JavaScript, HTML/CSS, React, Firebase}}{}
-    \item Enabled secure login and account creation using Firebase authentication and cloud functions
-    \item Implemented a map interface using Google Maps API to display all scheduled events and user's location
-    \item Incorporated Firebase cloud functions to facilitate event management and incorporated Material User Interface tabs to design a comprehensive Events page for streamlined functionality
-\end{subsection}
 \end{section}
 
 \sectiontable{SKILLS \& AWARDS}{
-    \entry{Languages}{Scala/Chisel, Ruby on Rails, Python, C/C++, HTML/CSS, JavaScript, Verilog, Java}
-    \entry{Miscellaneous}{Git, Linux, React, TypeScript, Vue, Firebase, AWS Amplify, GraphQL, S3, DynamoDB, sbt, MATLAB}
+    \entry{Languages}{Ruby on Rails, Scala/Chisel, Python, C/C++, HTML/CSS, JavaScript, Verilog, Java}
+    \entry{Miscellaneous}{Git, Linux, React, TypeScript, Vue, AWS Amplify, Firebase, GraphQL, S3, DynamoDB, Heroku, sbt}
     \entry{Awards}{Dean’s Honors, Eagle Scout (Apr 2019), Tau Beta Pi}
+
 }
 
 \end{document}
