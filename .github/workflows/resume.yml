@@ -1,0 +1,39 @@
+name: Resume Building
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup LaTeX Dependencies
+        uses: make -C resume-builder install
+
+      - name: Build Resume
+        uses: make -C resume-builder
+
+      - name: Move Resume
+        uses: mv resume-builder/resume.pdf static/Darren_Lin_Resume.pdf
+
+      - name: Cleanup
+        uses: make -C resume-builder clean 
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+      - name: Commit and push PDF to repository
+        run: |
+          git add static/Darren_Lin_Resume.pdf  # Stage the file
+          git commit -m "Updating Darren_Lin_Resume.pdf"
+          git push origin main                     
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the token to authenticate
